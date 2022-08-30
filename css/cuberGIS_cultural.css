@@ -112,6 +112,13 @@ article section:nth-child(2){
     transition: all 0.3s;
 }
 
+.top{
+    height: 70px;
+    padding: 22px 18px 20px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
 .section_2 .top{
     height: 70px;
     padding: 22px 18px 20px;
