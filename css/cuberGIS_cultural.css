@@ -10,5 +10,282 @@ html {
     /* font-size: 62.5%; */
     overflow: hidden;
     font-family: 'Nanum Barun Gothic', sans-serif;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+
+header{
+    background-color: #fff;
+    color: #1e1e1e;
+    border-top:#dadada 1px solid;
+    border-bottom:#dadada 1px solid;
+}
+
+header div:nth-child(1){
+    height: 70px;
+    width: 100vw;
+}
+
+header div:nth-child(1) img{
+    width: 200px;
+    height: 40px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+header div:last-child{
+    height: 70px;
+}
+
+header div:last-child li{
+    width: 130px;
+    height: 50px;
+    margin-top: 10px;
+    line-height: 50px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.padding_45{
+    padding-right: 45px;
+}
+
+article section:nth-child(1){
+    width: 70px;
+    border-right: #d9d9d9 1px solid;
+    height: 100vh;
+}
+
+article section:nth-child(1) div{
+    width: 100%;
+    height: 90px;
+    padding: 8px 0;
+    opacity: 0.8;
+    text-align: center;
+    word-spacing: -1px;
+    font-size: 12px;
+    border-bottom: #d9d9d9 1px solid;
+    cursor: pointer;
+}
+
+article section:nth-child(1) div i{
+    font-size: 25px;
+    margin-top: 7px;
+    margin-bottom: 5px;
+}
+
+.wrap_on{
+    background-color: #3085df;
+    opacity: 1;
+    color: #fff;
+}
+
+.wrap{
+    transition: all 0.2s;
+    color: #1e1e1e;
+
+}
+
+.wrap:hover{
+    background-color: #d9d9d9;
+}
+
+
+article section:nth-child(2){
+    width: 360px;
+    height: 100vh;
+    border-right: #d9d9d9 1px solid;
+    transition: all 0.3s;
+}
+
+.section_1{
+    display: none;
+    transition: all 0.3s;
+
+}
+
+.section_2{
+    display: block;
+    transition: all 0.3s;
+}
+
+.section_2 .top{
+    height: 70px;
+    padding: 22px 18px 20px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.section_2 .body{
+    height: 480px;
+    display: block;
+}
+
+.section_2 .btn{
+    padding-left: 18.5px;
+    color: #1e1e1e;
+}
+
+.section_2 .btn_on{
+    width: 160px;
+    height: 33px;
+    border: 1px solid #d9d9d9;
+    line-height: 30px;
+    text-align: center;
+    font-size: 13px;
     font-weight: 600;
+    background-color: #fff;
+    border-bottom: 2px solid #3085df;
+    cursor: pointer;
+}
+
+.section_2 .btn_off{
+    width: 160px;
+    height: 33px;
+    border: 1px solid #d9d9d9;
+    line-height: 30px;
+    text-align: center;
+    font-size: 13px;
+    background-color: #fafafa;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.section_2 .btn_off:hover{
+    color: #3085df;
+}
+
+.section_2 .radio{
+    font-size: 13px;
+    width: 320px;
+    margin: 0 auto;
+    padding-top: 15px;
+    position: relative;
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.section_2 .radio span{
+    position: absolute;
+    margin-left: 10px;
+    color: #1e1e1e;
+}
+
+.section_2 .radio_2{
+    margin-left: 135px
+}
+
+.section_2 .select_box{
+    border-top: 1px solid #d9d9d9;
+}
+
+.section_2 .select_box{
+    width: 325px;
+    margin: 0 auto;
+}
+
+.section_2 .select_box div{
+    margin-top: 20px;
+    font-size: 13px;
+    color: #444;
+}
+
+.section_2 .select_box select{
+    width: 325px;
+    height: 28px;
+    font-size: 13px;
+    color: #444444;
+    margin-top: 5px;
+    border: #d9d9d9 1px solid;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.section_2 input[type="text"]{
+    width: 325px;
+    margin-top: 5px;
+    height: 28px;
+    padding-left: 10px;
+    border: #d9d9d9 1px solid;
+}
+
+.section_2 .select_box div button{
+    width: 65px;
+    height: 32px;
+    border: #d9d9d9 1px solid;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.section_2 .part_1{
+    display: block;
+}
+
+.section_2 .part_2{
+    display: none;
+}
+
+.section_2 .btn_box{
+    display: flex;
+}
+
+.section_3{
+    display: none;
+    transition: all 0.3s;
+}
+
+
+.side_nav_close {
+    top: 50%;
+    left: 425px;
+    width: 22px;
+    overflow: hidden;
+    height: 70px;
+    background: url(../asset/slide_off.png) no-repeat center top;
+    line-height: 9999px;
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    transition: all 0.3s;
+}
+
+.side_nav_open {
+    top: 50%;
+    left: 70px;
+    width: 22px;
+    overflow: hidden;
+    height: 70px;
+    background: url(../asset/slide_on.png) no-repeat center top;
+    line-height: 9999px;
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    transition: all 0.3s;
+    display: none;
+}
+
+#map{
+    width: calc(100vw - 430px);
+    height: 100vh;
+    transition: all 0.3s;
+}
+
+.flex{
+    display: flex;
+}
+
+.block{
+    display: block;
+}
+
+label{
+    cursor: pointer;
 }

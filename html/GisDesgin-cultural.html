@@ -18,8 +18,183 @@
 </head>
 
 <body>
-  
 
+    <!--Header-->
+    <header class="flex">
+        <div>
+            <img src="../asset/큐버로고.png">
+        </div>
+        <div>
+            <ul>
+                <li>데이터 개방</li>
+                <li>문화재 GIS소개</li>
+                <li>도움말</li>
+                <li class="padding_45">테마지도</li>
+            </ul>
+        </div>
+    </header>
+
+    <!--Body-->
+    <article class="flex">
+        <section>
+            <div id="left_side_nav_1" class="wrap" onclick="nav_1()">
+                <i class="fa-solid fa-magnifying-glass"></i><br>
+                통합<br>검색
+            </div>
+            <div id="left_side_nav_2" class="wrap_on" onclick="nav_2()">
+                <i class="fa-solid fa-file-circle-check"></i><br>
+                상세<br>검색
+            </div>
+            <div id="left_side_nav_3" class="wrap" onclick="nav_3()">
+                <i class="fa-solid fa-map-location-dot"></i><br>
+                공간<br>검색
+            </div>
+        </section>
+
+        <section>
+            <!--통합검색-->
+            <div class="section_1">
+                통합검색
+            </div>
+
+            <!--상세검색-->
+            <div class="section_2">
+                <div class="top">
+                    상세 검색
+                </div>
+
+                <div class="body">
+
+                    <div class="btn flex">
+                        <div id="addr_btn_1" class="btn_on" onclick="search_1()">문화재검색</div>
+                        <div id="addr_btn_2" class="btn_off" onclick="search_2()">주소검색</div>
+                    </div>
+                    
+                    <div class="part_1">
+                        <div class="radio">
+                            <div class="radio_1">
+                                <input type="radio" name="select" id="radio_1" checked>
+                                <label for="radio_1"><span>지정문화재</span></label>
+                            </div>
+                            <div class="radio_2">
+                                <input type="radio" name="select" id="radio_2">
+                                <label for="radio_2"><span>문화유적분포지도</span></label>
+                            </div>
+                        </div>
+                        <div class="select_box">
+
+                            <!--형식만 구현해놓은것이라 초기화,검색 기능 넣으려면 form문 이용해서 수정필요-->
+                            <div>
+                                문화재명<br>
+                                <input type="text">
+                            </div>
+
+                            <div>
+                                지정구분<br>
+                                <select>
+                                    <option>선택</option>
+                                    <option>test_1</option>
+                                    <option>test_1</option>
+                                    <option>test_1</option>
+                                    <option>test_1</option>
+                                    <option>test_1</option>
+                                </select>
+                            </div>
+
+
+                            <div>
+                                지정종목<br>
+                                <select>
+                                    <option>선택</option>
+                                    <option>test_1</option>
+                                    <option>test_1</option>
+                                    <option>test_1</option>
+                                    <option>test_1</option>
+                                    <option>test_1</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                시도 선택<br>
+                                <select>
+                                    <option>시도 선택</option>
+                                    <option>test_1</option>
+                                    <option>test_1</option>
+                                    <option>test_1</option>
+                                    <option>test_1</option>
+                                    <option>test_1</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                시군구 선택<br>
+                                <select>
+                                    <option>시군구 선택</option>
+                                    <option>test_1</option>
+                                    <option>test_1</option>
+                                    <option>test_1</option>
+                                    <option>test_1</option>
+                                    <option>test_1</option>
+                                </select>
+                            </div>
+
+                            <div class="btn_box">
+                                <button style="margin-left: 185px;">초기화</button>
+                                <button style="background-color: #3085df; color: #fff; border: none;">검색</button>
+                            </div>
+
+                        </div>
+                </div>
+            </div>
+
+                <!--주소검색 추가시 이쪽에 구현-->
+                <div class="part_2">
+                    <div class="radio">
+                        <div class="radio_1">
+                            <input type="radio" name="select2" id="radio_1" checked>
+                            <label for="radio_1"><span>지번</span></label>
+                        </div>
+                        <div class="radio_2">
+                            <input type="radio" name="select2" id="radio_2">
+                            <label for="radio_2"><span>도로명 주소</span></label>
+                        </div>
+                    </div>
+
+                    <div class="select_box">
+
+                        <!--형식만 구현해놓은것이라 초기화,검색 기능 넣으려면 form문 이용해서 수정필요-->
+                        <div>
+                            읍/면/동/리<br>
+                            <input type="text">
+                        </div>
+
+                        <div class="btn_box">
+                            <button style="margin-left: 185px;">초기화</button>
+                            <button style="background-color: #3085df; color: #fff; border: none;">검색</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--공간검색-->
+            <div class="section_3">
+                공간검색
+            </div>
+        </section>
+
+        <a class="side_nav_close" onclick="sied_section_slide();"></a>
+        <a class="side_nav_open" onclick="sied_section_slide();"></a>
+
+        <section>
+            <div id="map"></div>
+            <script type="text/javascript"
+                src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b9cdea80ea8c388d574f0917aa22d2f1">
+            </script>
+        </section>
+    </article>
 </body>
 
 <!--js-->
