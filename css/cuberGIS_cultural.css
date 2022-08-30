@@ -1,0 +1,14 @@
+@import url('//cdn.jsdelivr.net/gh/snz-hayden/toolo/fonts/nanum_barungothic/nanum_barungothic.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* font-size: 62.5%; */
+    overflow: hidden;
+    font-family: 'Nanum Barun Gothic', sans-serif;
+    font-weight: 600;
+}
