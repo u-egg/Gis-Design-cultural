@@ -75,8 +75,8 @@ function sied_section_slide(){
     if ($('article section:nth-child(2)').css('width') == '360px') {
         $("article section:nth-child(2)").css("width", "0")
         $("#map").css("width", "calc(100vw - 70px)")
-        $(".side_nav_close").css("left", "65px")
-        $(".side_nav_open").css("left", "65px")
+        $(".side_nav_close").css("left", "64px")
+        $(".side_nav_open").css("left", "64px")
 
         if($('.section_1').css('display') == 'block'){
             $(".section_1").css("display", "none");

@@ -107,6 +107,22 @@ article section:nth-child(2){
     transition: all 0.3s;
 }
 
+.section_1 .search_area{
+    border-bottom: 1px solid #d9d9d9;
+    height: 100px;
+    padding-left: 16px;
+}
+
+.section_1 input[type="text"]{
+    width: 325px;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    height: 35px;
+    padding-left: 10px;
+    border: #d9d9d9 1px solid;
+}
+
 .section_2{
     display: block;
     transition: all 0.3s;
@@ -231,6 +247,18 @@ article section:nth-child(2){
     cursor: pointer;
 }
 
+.section_1 div button{
+    width: 65px;
+    height: 32px;
+    border: #d9d9d9 1px solid;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
 .section_2 .part_1{
     display: block;
 }
@@ -243,11 +271,47 @@ article section:nth-child(2){
     display: flex;
 }
 
+.section_1 .btn_box{
+    display: flex;
+}
+
 .section_3{
     display: none;
     transition: all 0.3s;
 }
 
+.section_3 .select_area{
+    border-bottom: 1px solid #d9d9d9;
+    height: 130px;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.select_area div{
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 70px;
+    height: 75px;
+    border: 1px solid #d9d9d9;
+    cursor: pointer;
+    transition: all 0.2s;
+    line-height: 75px;
+    text-align: center;
+}
+
+.select_area div:hover{
+    background-color: #b3d4fc;
+    text-shadow: none;
+}
+
+
+.select_area span{
+    position: absolute;
+    bottom: 20px;
+    left: 32px;
+    font-size: 14px;
+}
 
 .side_nav_close {
     top: 50%;
